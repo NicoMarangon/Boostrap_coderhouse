@@ -39,10 +39,10 @@
                             <a class="nav-link" aria-current="page" href="../index.html">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" href="portfolio.html">Portfolio</a>
+                            <a class="nav-link " href="portfolio.html">Portfolio</a>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown"
                                 aria-expanded="false">
                                 Nosotros
                             </a>
@@ -71,23 +71,24 @@
         </nav>
     </header>
     <main>
-        <section class="container">
+        <section class="container mt-4">
+            <h1 class="text-center mx-2">Consultas</h1>
             <form class="row g-3 needs-validation" novalidate>
                 <div class="col-md-4">
-                    <div class="form-floating mb-3">
-                        <input type="text" class="form-control" id="floatingInput" placeholder="Juan">
+                    <div class="input-group mb-3">
+                        <span class="input-group-text"><i class="bi bi-person-badge-fill"></i></span>
+                        <div class="form-floating">
+                            <input type="text" class="form-control" id="floatingInput" placeholder="Juan" required>
                         <label for="floatingInput">Nombre</label>
-                        <div class="valid-feedback">
-                            Looks good!
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="form-floating mb-3">
-                        <input type="text" class="form-control" id="floatingInput" placeholder="Perez">
+                    <div class="input-group mb-3">
+                        <span class="input-group-text"><i class="bi bi-person-badge-fill"></i></span>
+                        <div class="form-floating">
+                            <input type="text" class="form-control" id="floatingInput" placeholder="Perez" required>
                         <label for="floatingInput">Apellido</label>
-                        <div class="valid-feedback">
-                            Looks good!
                         </div>
                     </div>
                 </div>
@@ -95,17 +96,20 @@
                     <div class="input-group mb-3">
                         <span class="input-group-text"><i class="bi bi-telephone-fill"></i></span>
                         <div class="form-floating">
-                          <input type="tel" class="form-control" id="floatingInputGroup1" placeholder="+54 9 11 3519 xxxx">
-                          <label for="floatingInputGroup1">Telefono</label>
+                            <input type="tel" class="form-control" id="floatingInputGroup1"
+                                placeholder="+54 9 11 3519 xxxx" required>
+                            <label for="floatingInputGroup1">Telefono</label>
+
                         </div>
                     </div>
                 </div>
                 <div class="col-md-6">
-                    <div class="form-floating mb-3">
-                        <input type="text" class="form-control" id="floatingInput" placeholder="Av. Mitre 3527">
-                        <label for="floatingInput">Dierreción</label>
-                        <div class="valid-feedback">
-                            Looks good!
+                    <div class="input-group mb-3">
+                        <span class="input-group-text"><i class="bi bi-geo-alt-fill"></i></span>
+                        <div class="form-floating">
+                            <input type="text" class="form-control" id="floatingInput" placeholder="Av. Mitre 3525"
+                                required>
+                            <label for="floatingInput">Dirección</label>
                         </div>
                     </div>
                 </div>
@@ -113,55 +117,63 @@
                     <div class="input-group mb-3">
                         <span class="input-group-text"><i class="bi bi-envelope-fill"></i></span>
                         <div class="form-floating">
-                            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com"
+                                required>
                             <label for="floatingInput">Email</label>
-                            <div class="valid-feedback">
-                                Looks good!
-                            </div>
                         </div>
                     </div>
-                    <div class="form-floating mb-3">
-                        <span class="input-group-text"><i class="bi bi-geo-alt-fill"></i></span>
+                </div>
+                <div class="col-12">
+                    <div class="input-group mb-3">
+                        <span class="input-group-text"><i class="bi bi-chat-square-quote-fill"></i></span>
                         <div class="form-floating">
-                            <input type="text" class="form-control" id="floatingInput" placeholder="Av. Mitre 3525">
-                            <label for="floatingInput">direcciòn</label>
-                            <div class="valid-feedback">
-                                Looks good!
-                            </div>
+                            <textarea class="form-control" placeholder="Deje su Comentarios" id="floatingTextarea2"
+                            style="height: 100px" required></textarea>
+                            <label for="floatingTextarea2">Comentarios</label>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-12">
-                    <div class="form-floating">
-                        <textarea class="form-control" placeholder="Deje su Comentarios" id="floatingTextarea2" style="height: 100px"></textarea>
-                        <label for="floatingTextarea2">Comentarios</label>
-                      </div>
-                </div>
                 <div class="col-12">
-                  <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
-                    <label class="form-check-label" for="invalidCheck">
-                      Agree to terms and conditions
-                    </label>
-                    <div class="invalid-feedback">
-                      You must agree before submitting.
-                    </div>
-                  </div>
+                    <button class="btn btn-primary" type="submit">Enviar</button>
                 </div>
-                <div class="col-12">
-                  <button class="btn btn-primary" type="submit">Submit form</button>
-                </div>
-              </form>
+            </form>
+        </section>
+        <section class="container-fluid mt-2 p-0">
+            <div class="ratio ratio-21x9">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d93870.15072205839!2d-58.42084810736175!3d-34.62231820516088!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a334c73fe3e107%3A0xeae5d0a098ae5c1!2sUsina%20del%20Arte!5e0!3m2!1ses-419!2sar!4v1658971846744!5m2!1ses-419!2sar"
+                    title="Maps" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
         </section>
     </main>
-    <footer class="mt-2">
+    <footer>
         <nav class="navbar bg-dark">
             <div class="container d-flex justify-content-center">
                 <span class="navbar-brand mb-0 h1 text-white">by ksvproducciones</span>
             </div>
         </nav>
     </footer>
+    <script>
+        (() => {
+            'use strict'
 
+            // Fetch all the forms we want to apply custom Bootstrap validation styles to
+            const forms = document.querySelectorAll('.needs-validation')
+
+            // Loop over them and prevent submission
+            Array.from(forms).forEach(form => {
+                form.addEventListener('submit', event => {
+                    if (!form.checkValidity()) {
+                        event.preventDefault()
+                        event.stopPropagation()
+                    }
+
+                    form.classList.add('was-validated')
+                }, false)
+            })
+        })()
+    </script>
     <!-- JavaScript -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
         integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
